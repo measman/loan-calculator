@@ -679,10 +679,10 @@ export default function Home() {
             <div>
               <h4 className='text-lg font-semibold mb-4'>Contact Us</h4>
               <div className='space-y-2 text-gray-300'>
-                <p>Email: info@loancalc.com</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Address: 123 Finance Street</p>
-                <p>New York, NY 10001</p>
+                <p>Email: info@tsuman.com.np</p>
+                {/* <p>Phone: (555) 123-4567</p> */}
+                <p>Address: Patan, Lalitpur</p>
+                <p>Nepal</p>
               </div>
               <div className='mt-4 flex space-x-4'>
                 <a href='#' className='text-gray-300 hover:text-white'>
