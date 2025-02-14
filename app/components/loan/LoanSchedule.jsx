@@ -1,34 +1,33 @@
 // components/loan/LoanSchedule.jsx
 'use client';
-
-const exportToCSV = () => {
-  // Previous implementation remains the same
-  if (!emiSchedule) return;
-
-  const headers = ['Installment No.', 'EMI', 'Principal', 'Interest', 'Balance'];
-  const csvData = [
-    headers.join(','),
-    ...emiSchedule.map(row => [
-      row.installmentNo,
-      row.emi,
-      row.principal,
-      row.interest,
-      row.balance
-    ].join(','))
-  ].join('\n');
-
-  const blob = new Blob([csvData], { type: 'text/csv' });
-  const url = window.URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = 'emi-schedule.csv';
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-  window.URL.revokeObjectURL(url);
-};
-
 export default function LoanSchedule({emiSchedule}) {
+
+  const exportToCSV = () => {
+    // Previous implementation remains the same
+    if (!emiSchedule) return;
+  
+    const headers = ['Installment No.', 'EMI', 'Principal', 'Interest', 'Balance'];
+    const csvData = [
+      headers.join(','),
+      ...emiSchedule.map(row => [
+        row.installmentNo,
+        row.emi,
+        row.principal,
+        row.interest,
+        row.balance
+      ].join(','))
+    ].join('\n');
+  
+    const blob = new Blob([csvData], { type: 'text/csv' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'emi-schedule.csv';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  };
   
   return (
     <div className="bg-white rounded-lg shadow-lg p-6">
