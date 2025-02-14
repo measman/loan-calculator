@@ -577,7 +577,7 @@ export default function Home() {
               <h3 className='text-xl font-bold mb-4'>LoanCalc</h3>
               <p className='text-gray-300'>
                 Making loan calculations simple and accessible for everyone.
-                Your trusted partner in financial planning.
+                Your trusted partner in financial planning. :)
               </p>
             </div>
 
