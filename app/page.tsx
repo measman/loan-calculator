@@ -1,6 +1,7 @@
 // app/page.js
 "use client";
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   // Previous state and functions remain the same
@@ -148,6 +149,7 @@ export default function Home() {
 
   return (
     <div className='min-h-screen flex flex-col'>
+      <SpeedInsights />
       {/* Navigation Bar */}
       <nav className='bg-white shadow-md'>
         <div className='max-w-7xl mx-auto px-4'>
