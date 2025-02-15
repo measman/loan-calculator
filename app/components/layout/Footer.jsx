@@ -114,7 +114,7 @@ export default function Footer() {
               <p>Email: info@tsuman.com.np</p>
               {/* <p>Phone: (555) 123-4567</p> */}
               <p>Address: Lalitpur, Nepal</p>
-              {/* <p>Nepal</p> */}
+              <p>Nepal</p>
             </div>
             <div className='mt-4 flex space-x-4'>
               <a href='#' className='text-gray-300 hover:text-white'>
