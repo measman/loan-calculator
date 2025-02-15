@@ -1,6 +1,7 @@
 // app/page.js
 "use client";
 import { useState } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Navbar from "./components/layout/Navbar";
 import LoanForm from "./components/loan/LoanForm";
 import LoanSummary from "./components/loan/LoanSummary";
@@ -75,6 +76,7 @@ export default function Home() {
 
   return (
     <div className='min-h-screen flex flex-col'>
+      <SpeedInsights />
       <Navbar />
       <main className='flex-grow bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4'>
         <div className='max-w-7xl mx-auto'>
