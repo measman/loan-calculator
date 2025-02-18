@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           {/* Company Info */}
           <div className='space-y-4'>
-            <h3 className='text-xl font-bold mb-4'>LoanCalc</h3>
+            <h3 className='text-xl font-bold mb-4'>Settlement LoanCalc</h3>
             <p className='text-gray-300'>
               Making loan calculations simple and accessible for everyone. Your
               trusted partner in financial planning.
@@ -132,7 +132,7 @@ export default function Footer() {
 
         <div className='mt-8 pt-8 border-t border-gray-700'>
           <div className='text-center text-gray-400'>
-            <p>&copy; 2025 LoanCalc. All rights reserved.</p>
+            <p>&copy; 2025 Settlement LoanCalc. All rights reserved.</p>
             <div className='mt-2'>
               <a href='#' className='text-gray-400 hover:text-white mx-2'>
                 Privacy Policy
