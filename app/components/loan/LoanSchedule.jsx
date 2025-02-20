@@ -76,16 +76,16 @@ export default function LoanSchedule({ emiSchedule }) {
                   {row.installmentNo}
                 </td>
                 <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-900'>
-                  {row.emi}
+                Rs. {row.emi}
                 </td>
                 <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-900'>
-                  {row.principal}
+                Rs. {row.principal}
                 </td>
                 <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-900'>
-                  {row.interest}
+                Rs. {row.interest}
                 </td>
                 <td className='px-6 py-4 whitespace-nowrap text-sm text-gray-900'>
-                  {row.balance}
+                Rs. {row.balance}
                 </td>
               </tr>
             ))}
