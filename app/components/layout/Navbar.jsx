@@ -61,7 +61,7 @@ const Navbar = () => {
               className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors ${isActiveLink('/calculator') ? 'bg-gray-200' : ''}`}
             >
               <Calculator className="h-4 w-4" />
-              <span>Calculator</span>
+              <span>Deposit Calculator</span>
             </Link>
 
             <Link
@@ -91,7 +91,7 @@ const Navbar = () => {
                 className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors ${isActiveLink('/calculator') ? 'bg-gray-200' : ''}`}
               >
                 <Calculator className="h-4 w-4" />
-                <span>Calculator</span>
+                <span>Deposit Calculator</span>
               </Link>
 
               <Link
