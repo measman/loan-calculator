@@ -11,6 +11,7 @@ import {
   calculateEMI,
   calculateLoanSummary,
   generateSchedule,
+  generateDepositSchedule,
 } from "./lib/calculations";
 import Card from "./components/ui/card";
 
@@ -26,16 +27,14 @@ export default function Home() {
     const emi = calculateEMI(amount, rate, installments);
     const schedule = generateSchedule(amount, rate, installments);
     const summary = calculateLoanSummary(amount, rate, installments, emi);
+    // const monthlyDepositschedule = generateDepositSchedule(amount, rate, installments);
+    // console.log(monthlyDepositschedule);
 
     setEmiSchedule(schedule);
     setLoanSummary(summary);
   };
 
-  return (
-    <div className='min-h-screen flex flex-col'>
-      <SpeedInsights />
-      <Navbar />
-      <main className='flex-grow bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4'>
+  return (    
         <div className='max-w-7xl mx-auto'>
           <div className='text-center mb-12'>
             <h1 className='text-4xl font-bold text-gray-900 mb-4'>
@@ -54,9 +53,6 @@ export default function Home() {
               <LoanSchedule emiSchedule={emiSchedule} />
             </>
           )}
-        </div>
-      </main>
-      <Footer />
-    </div>
+        </div>      
   );
 }
