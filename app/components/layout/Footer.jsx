@@ -6,7 +6,7 @@ export default function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
           {/* Company Info */}
           <div className='space-y-4'>
-            <h3 className='text-xl font-bold mb-4'>Settlement LoanCalc</h3>
+            <h3 className='text-xl font-bold mb-4'>Settlement Finance Calc</h3>
             <p className='text-gray-300'>
               Making loan calculations simple and accessible for everyone. Your
               trusted partner in financial planning.
