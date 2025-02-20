@@ -1,4 +1,4 @@
-# Loan Calculator Tool
+# Settlement Finance Calc App
 
 A modern, user-friendly loan calculator built with Next.js that helps users calculate loan payments, interest rates, and amortization schedules. This tool provides accurate calculations for different types of loans including personal loans, mortgages, and auto loans.
 
