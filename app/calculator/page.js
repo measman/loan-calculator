@@ -8,7 +8,7 @@ import DepositSchedule from "../components/loan/DepositSchedule";
 import { generateDepositSchedule } from "../lib/calculations";
 
 const Calculator = () => {
-  const [depositSchedule, setDepositSchedule] = useState([]);
+  const [depositSchedule, setDepositSchedule] = useState(null);
 
   const handleCalculate = (formData) => {
     const amount = parseFloat(formData.depositAmount);
